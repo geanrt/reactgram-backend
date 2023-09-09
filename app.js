@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 // solve CORS
-app.use(cors({credentials: true, origin: "https://test-reactgram-br.netlify.app"}));
+app.use(cors({credentials: true, origin: "https://reactgram-br.netlify.app"}));
 
 // upload directore
 app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
